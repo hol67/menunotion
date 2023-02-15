@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+	<!-- Google Font -->
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap" rel="stylesheet">
+
+
+	<!-------->
+
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+
+
+		.navMenu {
+			font-family: 'Comfortaa', cursive;
+			padding: 8px;
+			text-align: center;
+			margin: 7px auto;
+			width: fit-content;
+		}
+
+		.navMenu a {
+			color: #696969;
+			text-decoration: none;
+			text-transform: uppercase;
+			display: inline-block;
+			padding: 6px;
+		}
+
+		.background {
+			background-color: #ece5f0;
+		}
+
+		.border {
+			border: 1px solid #cccccc;
+
+		}
+
+		.navMenu a:hover {
+
+			color:#6412b5;
+		}
+	</style>
+</head>
+
+<body>
+
+	<nav class="navMenu  border">
+		<a id="inicio" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-house"></i> </a>
+		<a id="Caja de Herramientas" onclick="navigate (this.id)" href="#"> Caja de Herramientas </a> 
+                <a id="Kreativos M" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-check"></i> Kreativos M</a>
+                <a id="punto g" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-check"></i> punto g </a>
+
+	        <a id="Grupo Barajas" onclick="navigate(this.id)" href="#"> <i class="fa-sharp fa-regular fa-paper-plane"></i> Grupo Barajas</a>
+                <a id="Herrajes B" onclick="navigate(this.id)" href="#"> <i class="fa-sharp fa-regular fa-paper-plane"></i> herajes b.</a>
+                <a id="Tornimex" onclick="navigate(this.id)" href="#"> <i class="fa-sharp fa-regular fa-paper-plane"></i> Tornimex </a>
+
+	</nav>
+
+
+	<script>
+
+		let direction = "horizontal";
+		if (direction === "vertical") {
+			document.head.insertAdjacentHTML("beforeend", `<style>.navMenu a {display: block; text-align:left; margin:7px} i{width:15px; margin-right:5px} .navMenu{margin:3px}</style>`)
+		}
+
+
+		function navigate(id) {
+
+			if (id == 'inicio')
+				window.open("https://www.notion.so/Equipo-Kreativos-5185ad832a5c471aabd9c7e772cb5eb2?pvs=4").focus();
+      else if (id == "Caja de Herramientas")
+				window.open("https://www.notion.so/Herramientas-y-mas-3cf38674de4e40618dfe421735796718?pvs=4").focus();
+			else if (id == "Kreativos M")
+				window.open("https://www.notion.so/Kreativos-Marketing-3c291163aeb54da4a30d78fd27f50313?pvs=4").focus();
+			else if (id == "punto g")
+				window.open("https://www.notion.so/Punto-G-9c3f6441d5e742179f55b4deff45ec42?pvs=4").focus();
+
+			else if (id == "Grupo Barajas")
+				window.open("https://www.notion.so/Grupo-Barajas-16ef75a711ec4f9b824b641b542d5553?pvs=4").focus();
+			else if (id == "Herrajes B")
+				window.open("https://www.notion.so/Herrajes-Boulevard-ee00533118d641fb82847458ae7a9b75?pvs=4").focus();
+			else if (id == "Tornimex")
+				window.open("https://www.notion.so/Tornimex-b64e3f64650045faaa75a62d68057f75?pvs=4",).focus();
+			
+		}
+	</script>
+
+
+</body>
+
+</html>

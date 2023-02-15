@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+	<!-- Google Font -->
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap" rel="stylesheet">
+
+
+	<!-------->
+
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+
+
+		.navMenu {
+			font-family: 'Comfortaa', cursive;
+			padding: 8px;
+			text-align: center;
+			margin: 7px auto;
+			width: fit-content;
+		}
+
+		.navMenu a {
+			color: #696969;
+			text-decoration: none;
+			text-transform: uppercase;
+			display: inline-block;
+			padding: 6px;
+		}
+
+		.background {
+			background-color: #ece5f0;
+		}
+
+		.border {
+			border: 1px solid #cccccc;
+
+		}
+
+		.navMenu a:hover {
+
+			color:#6412b5;
+		}
+	</style>
+</head>
+
+<body>
+
+	<nav class="navMenu  border">
+		<a id="inicio" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-house"></i> </a>
+		<a id="Caja de Herramientas" onclick="navigate(this.id)" href="#"> Caja de Herramientas </a>
+                <a id="Kreativos M" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-check"></i> Kreativos M</a>
+                <a id="punto g" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-check"></i> punto g </a>
+
+	        <a id="Grupo Barajas" onclick="navigate(this.id)" href="#"> <i class="fa-sharp fa-regular fa-paper-plane"></i> Grupo Barajas</a>
+                <a id="Herrajes B" onclick="navigate(this.id)" href="#"> <i class="fa-sharp fa-regular fa-paper-plane"></i> herajes b.</a>
+                <a id="Tornimex" onclick="navigate(this.id)" href="#"> <i class="fa-sharp fa-regular fa-paper-plane"></i> Tornimex </a>
+
+	</nav>
+
+
+	<script>
+
+		let direction = "horizontal";
+		if (direction === "vertical") {
+			document.head.insertAdjacentHTML("beforeend", `<style>.navMenu a {display: block; text-align:left; margin:7px} i{width:15px; margin-right:5px} .navMenu{margin:3px}</style>`)
+		}
+
+
+		function navigate(id) {
+
+			if (id == 'inicio')
+				window.open("https://inicio.com", '_blank').focus();
+			else if (id == "Kreativos M")
+				window.open("https://Kreativos M.com", '_blank').focus();
+			else if (id == "punto g")
+				window.open("https://PUNTO g.com", '_blank').focus();
+
+			else if (id == "Grupo Barajas")
+				window.open("https://Grupo Barajas.com", '_blank').focus();
+			else if (id == "Herrajes B")
+				window.open("https://Herrajes B.com", '_blank').focus();
+			else if (id == "Tornimex")
+				window.open("https://Tornimex.com", '_blank').focus();
+			
+		}
+	</script>
+
+
+</body>
+
+</html>

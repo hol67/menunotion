@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+	<!-- Google Font -->
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+
+	<!-------->
+
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+
+
+		.navMenu {
+			font-family: 'Advent Pro', sans-serif;
+			padding: 10px;
+			text-align: center;
+			margin: 7px auto;
+			width: fit-content;
+		}
+
+		.navMenu a {
+			color: #aaa9ab;
+			text-decoration: none;
+			text-transform: uppercase;
+			display: inline-block;
+			padding: 10px;
+		}
+
+		.background {
+			background-color: #2e046e;
+		}
+
+		.border {
+			border: 0px solid #cccccc;
+
+		}
+
+		.navMenu a:hover {
+
+			color: #2e046e;
+		}
+	</style>
+</head>
+
+<body>
+
+	<nav class="navMenu  border">
+		<a id="home" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-house"></i> </a>
+		
+                <a id="kreativos marketing" onclick="navigate(this.id)" href="#"> --- <i class="fa-solid fa-link"></i> kreativos marketing </a>
+		
+                <a id="plantillas de orbjetivos" onclick="navigate(this.id)" href="#"> <i class="fa-sharp fa-solid fa-right-long"></i> plantillas de objetivos</a>
+		<a id="prioridades y horarios" onclick="navigate(this.id)" href="#"> <i class="fa-sharp fa-solid fa-right-long"></i> prioridades y horarios</a>
+                <a id="planeación general" onclick="navigate(this.id)" href="#"> <i class="fa-sharp fa-solid fa-right-long"></i> planeación general</a>
+                <a id="tablas de bases de datos" onclick="navigate(this.id)" href="#"> <i class="fa-sharp fa-solid fa-right-long"></i>tablas de bases de datos</a>
+                <a id="objetivos kreativos" onclick="navigate(this.id)" href="#"> <i class="fa-sharp fa-solid fa-right-long"></i>objetivos kreativos</a>
+
+                <a id="tornimex"navigate(this.id)" href="#">  --- <i class="fa-sharp fa-solid fa-tags"></i>tornimex</a>
+		
+                
+                
+		<a id="obejtivos tornimex" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-wrench"></i>objetivos tornimex</a>
+		
+
+
+
+	</nav>
+
+
+	<script>
+
+		let direction = "vertical";
+		if (direction === "vertical") {
+			document.head.insertAdjacentHTML("beforeend", `<style>.navMenu a {display: block; text-align:left; margin:7px} i{width:15px; margin-right:8px} .navMenu{margin:3px}</style>`)
+		}
+
+
+		function navigate(id) {
+
+			if (id == 'home')
+				window.open("https://www.notion.so/Equipo-Kreativos-5185ad832a5c471aabd9c7e772cb5eb2?pvs=4").focus();
+			
+
+                       else if (id == "kreativos marketing")
+				window.open("https://www.notion.so/Objetivo-Semanal-e7ded0d40cc442ea94173bc78374f0f0?pvs=4#4bd57319d9e94103b83d43455a4984f2").focus();
+
+
+
+                       else if (id == "plantillas de orbjetivos")
+				window.open("https://www.notion.so/Plantillas-de-Objetivos-eb5eb260dedd4a17b84a9c65b109156e?pvs=4").focus();
+                       else if (id == "prioridades y horarios")
+				window.open("https://www.notion.so/Prioridad-y-horarios-5d75375165654ba1a009831f04fc2199?pvs=4").focus();
+		       else if (id == "planeación general")
+				window.open("https://www.notion.so/Planeaci-n-general-3e5f735df40d4a4ebb9c0b3461eb88cf?pvs=4").focus();
+		       else if (id == "tablas de bases de datos")
+				window.open("https://www.notion.so/Tablas-de-Bases-de-datos-647c53c80d974565acc0316083691d0d?pvs=4").focus();
+		       else if (id == "objetivos kreativos")
+				window.open("https://www.notion.so/Objetivos-Kreativos-3fb95288601943b889ba5296bf52d230?pvs=4").focus();
+			
+
+		       else if (id == "tornimex")
+				window.open("https://www.notion.so/Objetivo-Semanal-e7ded0d40cc442ea94173bc78374f0f0?pvs=4#fef7673fb7d240378cd20effde3c157d").focus();
+
+
+
+                       else if (id == "obejtivos tornimex")
+				window.open("https://www.notion.so/Objetivo-Tornimex-8d5c474a0dfa4f0e9b48911fc2807313?pvs=4").focus();
+                       
+
+
+		}
+	</script>
+
+
+</body>
+
+</html>
